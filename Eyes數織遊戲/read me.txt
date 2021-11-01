@@ -1,0 +1,5 @@
+執行請安裝xampp
+並開啟Apache與MySQL伺服器
+再將Eyes數織遊戲資料夾放進xampp路徑下的htdocs資料夾裡
+瀏覽器輸入http://localhost/Eyes數織遊戲/login.html
+即可開啟網頁

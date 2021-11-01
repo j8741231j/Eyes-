@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./img/icon.png" type="image/ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~⊙艾斯-登入頁⊙~</title>
+    <!-- 引入CSS檔 -->
+    <link rel="stylesheet" type="text/css" href="./css/login.css">
+    <!-- 引入JavaScript檔 -->
+    <script type="text/javascript" src="./js/login.js" defer></script>
+    <script type="text/javascript" src="./js/leaves.js" defer></script>
+    <script src="./js/jquery-3.4.1.js"></script>
+</head>
+<body>
+    <!-- 主背景 -->
+    <div id='divBack'>
+        <button id='btnStart'>Start</button><br>
+        <button onclick="Win()">測試</button>
+    </div>
+    <!-- 登入畫面 -->
+    <div id="divLogin">
+        <form action="./login.php" method="post">
+            <p class="pLogin">
+                <label class="label_input">Username</label>
+                <input required type="text" id="username" name="username" class="text_field" />
+            </p>
+            <p class="pLogin">
+                <label class="label_input">Password</label>
+                <input required type="password" id="password" name="password" class="text_field" />
+            </p>
+            <input id="btnLogin" type="submit" name="submit" value="Login">
+        </form>
+        <a href="./signup.html"  style="position: absolute; left: 60%; top:64% ;font-size:small ">註冊</a>
+        <a href="./signup.html" style="position: absolute; left: 73%; top:64% ;font-size:small">忘記密碼</a>
+    </div>
+    <!-- 遊戲空間 -->
+    <div id='divMain'>
+        <img class="Heart" id="picHeart1" src="./img/heart.png" alt="剩餘機會">
+        <img class="Heart" id="picHeart2" src="./img/heart.png" alt="剩餘機會">
+        <img class="Heart" id="picHeart3" src="./img/heart.png" alt="剩餘機會">
+        <img class="Heart" id="picHeart4" src="./img/heart.png" alt="剩餘機會">
+        <table id='topTab'></table>
+        <table id='leftTab'></table>
+        <table id='tab'></table>
+        <button id='btnNext' onclick="Turn()" disabled="disabled">Next</button>
+        <button id='btnRestart' onclick="Continue()" disabled="disabled">Restart</button>
+        <audio id="bingo" preload="preload" src="./img/bgm/currect.mp3"></audio>
+        <audio id="wrong" preload="preload" src="./img/bgm/wrong.mp3"></audio>
+        <audio id="transition" preload="preload" src="./img/bgm/turn.mp3"></audio>
+        <audio id="bgm0" loop="loop" preload="preload" src="./img/bgm/SometimesSomeone.mp3"></audio>
+        <audio id="bgm5" loop="loop" preload="preload" src="./img/bgm/SometimesSomeone.mp3"></audio>
+        <audio id="bgm1" loop="loop" preload="preload" src="./img/bgm/MistyForest.mp3"></audio>
+        <button id='btnEsc' onclick="Esc()" style="top: 2%; left: 90%;">Exit</button>
+    </div>
+    <!-- 過場黑屏 -->
+    <div id=divTurnLevel>
+    </div>
+    <!-- 感謝狀 -->
+    <div id='divLast'>
+        <p id="p1"></p>
+        <button id='btnEsc' onclick="Esc()">Exit</button>
+    </div>
+</body>
+</html>

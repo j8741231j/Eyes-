@@ -1,0 +1,5 @@
+CSS裡的路徑:url('../img/correct.png');
+JS裡的路徑:"url('./img/mainBG.png')";
+html的路徑:"./img/heart.png"
+JS與html為同一個出發點
+CSS則從子資料夾出發

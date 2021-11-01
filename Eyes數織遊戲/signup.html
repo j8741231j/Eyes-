@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./img/icons.png" type="image/ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~⊙註冊帳號⊙~></title>
+    <!-- 引入CSS檔 -->
+    <link rel="stylesheet" type="text/css" href="./css/signup.css">
+    <!-- 引入JavaScript檔 -->
+    <script type="text/javascript" src="./js/captcha.js" defer></script>
+    <script src="./js/jquery-3.4.1.js"></script>
+
+</head>
+
+<body>
+    <div id="divBG"></div>
+    <div id="divRegister">
+        <!-- onclick="return false" -->
+        <form id="formRegister" action="./signup.php" method="post">
+            <img src="./img/Register/user.png" alt="userMark">
+            <input required type="text" id="username" name="username" value="" placeholder="輸入用戶名稱"><br>
+            <img src="./img/Register/password.png" alt="passwordMark">
+            <input required type="password" id="password" name="password" value="" panel placeholder="輸入密碼"><br>
+            <img src="./img/Register/password.png" alt="passwordMark">
+            <input required type="password" id="pwCheck" name="pwCheck" value="" panel placeholder="再次輸入密碼"><br>
+            <img src="./img/Register/name.png" alt="nameMark">
+            <input required type="text" id="name" name="name" value="" placeholder="輸入姓名"><br>
+            <img src="./img/Register/mail.png" alt="mailMark">
+            <input required type="email" id="email" name="email" value="" placeholder="輸入註冊信箱"><br>
+            <img src="./img/Register/tel.png" alt="telMark">
+            <input required type="tel" id="phone" name="phone" value="" placeholder="輸入手機號碼"><br>
+            <img src="./img/Register/CAPTCHA.png" alt="CAPTCHA">
+            <input required type="text" id="CAPTCHA" name="Verification" value="" placeholder="輸入驗證碼">
+            <input type="button" id="btnGetCode" value="點我驗證" onclick="createCode()" /><br>
+            <input type="submit" id="btnSubmit" name="submit" value="註冊">
+
+        </form>
+    </div>
+</body>
+
+</html>

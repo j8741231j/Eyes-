@@ -1,0 +1,124 @@
+#divBG {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/RegBG.png");
+    position: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0px;
+    left: 0px;
+}
+
+#divRegister {
+    background-color: wheat;
+    width: 40%;
+    height: 97%;
+    margin-left: 30%;
+    /* background-image: linear-gradient(rgba(255, 255, 255,0.8 ), rgba(0, 0, 0, 0.5)),url("./img/divRegister.jpg"); */
+    background-image: url("../img/divRegister.jpg");
+    position: fixed;
+    background-size: cover;
+    background-position: right 65%;
+    background-repeat: no-repeat;
+    top: 5px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    border: 4px solid black;
+}
+
+
+/* 註冊區(半透明) */
+
+#formRegister {
+    width: 70%;
+    height: 75%;
+    position: absolute;
+    top: 17%;
+    left: 8.5%;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding-left: 12%;
+    padding-top: 1.5%;
+}
+
+
+/* 輸入框 */
+
+input {
+    margin-bottom: 0.9%;
+    height: 7%;
+    width: 70%;
+}
+
+
+/* 圖標 */
+
+img {
+    width: 9%;
+    position: relative;
+    top: 3%;
+}
+
+
+/* 驗證碼產生鍵 */
+
+#CAPTCHA {
+    width: 40%;
+}
+
+#btnGetCode {
+    position: relative;
+    width: 29%;
+    background-size: cover;
+    letter-spacing: 8px;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(11, 11, 85);
+    height: 8%;
+    top: 0.4%;
+}
+
+
+/* 提交按鈕 */
+
+#btnSubmit {
+    position: relative;
+    margin-top: 23px;
+    left: 10%;
+    box-shadow: 3px 4px 0px 0px #899599;
+    background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+    background-color: #ededed;
+    border-radius: 5px;
+    border: 1px solid #d6bcd6;
+    display: inline-block;
+    cursor: pointer;
+    color: #064d6b;
+    font-family: Arial;
+    font-size: 100%;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1px 1px 0px #e1e2ed;
+}
+
+#btnSubmit:hover {
+    background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+    background-color: #bab1ba;
+}
+
+#btnSubmit:active {
+    position: relative;
+    top: 1px;
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+
+/* input.ng-invalid.ng-touched {
+    border: 1px solid red
+} */

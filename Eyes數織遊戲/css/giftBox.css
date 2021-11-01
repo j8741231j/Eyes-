@@ -1,0 +1,344 @@
+/* 玩家資訊 */
+
+#divUser {
+    transition: all 0.5s;
+    z-index: 1;
+    background-color: rgba(127, 218, 241, 0.9);
+    background-image: url("../img/userBG.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 25%;
+    height: 12.5%;
+    left: 0%;
+    position: fixed;
+    top: 0%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-left: 0px;
+    border-top: 0px;
+    border-radius: 0 0px 15px 0;
+    font-size: large;
+    font-weight: bold;
+    padding-top: 18px;
+    padding-left: 20px;
+    font-family: Comic Sans MS;
+}
+
+/* 存檔按紐 */
+#btnSave {
+	box-shadow: 2px 2px 0px 0px #7a6f7a;
+	background:linear-gradient(to bottom, #3d3c3c 5%, #0a0a0a 100%);
+	background-color:#3d3c3c;
+	border-radius:5px;
+	border:1px solid #0d0c0c;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	padding:3px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2911db;
+}
+#btnSave:hover {
+	background:linear-gradient(to bottom, #0a0a0a 5%, #3d3c3c 100%);
+	background-color:#0a0a0a;
+}
+#btnSave:active {
+	position:relative;
+	top:1px;
+}
+
+/* 登出按紐 */
+#btnLogout {
+    position:absolute;
+	left: 75%;
+    top: 65%;
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:5px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+#btnLogout:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+#btnLogout:active {
+	position:absolute;
+	top:66%;
+}
+
+
+/* 關卡選單 */
+
+.divChapter {
+    overflow: auto;
+    transition: all 0.5s;
+    z-index: 1;
+    background-color: rgba(199, 127, 241, 0.9);
+    background-image: url("../img/level.png");
+    background-size: cover;
+    width: 10%;
+    height: 84%;
+    left: -10.2%;
+    position: fixed;
+    top: 15.4%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    border: 3px solid rgba(7, 7, 7, 0.9);
+    border-left: 0px;
+    /* border-radius: 0 15px 15px 0; */
+}
+
+/* 關卡按鍵 */
+
+.btnLv {
+    /* position: absolute; */
+    box-shadow: 1px 1px 0px 0px #ced7f0;
+    background: linear-gradient(to bottom, #b7b8bb 5%, #f5faeb 100%);
+    background-color: #a9bcde;
+    border-radius: 10px;
+    border: 2px solid #797676;
+    display: inline-block;
+    cursor: pointer;
+    color: #784411;
+    font-family: Trebuchet;
+    font-size: 17px;
+    padding: 7px 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2d3957;
+    left: 10%;
+    margin-left: 18%;
+    margin-bottom: 5%;
+}
+
+.btnLv:hover {
+    background: linear-gradient(to bottom, #f5faeb 5%, #b7b8bb 100%);
+    background-color: #7893b3;
+}
+
+.btnLv:active {
+    background: #b7b8bb;
+}
+
+#pFlor, #pGallery {
+    font-size: large;
+    font-weight: bold;
+    color: #f5faeb;
+    margin-left: 38%;
+    font-family: 'Trebuchet MS';
+}
+
+/* 關卡(第二大關) */
+.btnLv_2 {
+    /* position: absolute; */
+    box-shadow: 1px 1px 0px 0px #ced7f0;
+    background: linear-gradient(to bottom, #9aaff0 5%, #395588 100%);
+    background-color: #a9bcde;
+    border-radius: 10px;
+    border: 2px solid #797676;
+    display: inline-block;
+    cursor: pointer;
+    color: #784411;
+    font-family: Trebuchet;
+    font-size: 17px;
+    padding: 7px 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2d3957;
+    left: 10%;
+    margin-left: 18%;
+    margin-bottom: 5%;
+}
+
+.btnLv_2:hover {
+    background: linear-gradient(to bottom, #395588 5%, #9aaff0   100%);
+    background-color: #7893b3;
+}
+
+.btnLv_2:active {
+    background: #b7b8bb;
+}
+
+#pFlor, #pGallery {
+    font-size: large;
+    font-weight: bold;
+    color: #f5faeb;
+    margin-left: 36%;
+    font-family: 'Trebuchet MS';
+}
+
+.showorhide1 {
+    /* display: inline-block; */
+    position: absolute;
+    z-index: 1;
+    width: 60px;
+    height: 38px;
+    top: 16%;
+    left: 0%;
+    background: rgba(5, 5, 5, 0.9);
+    transition: all 0.5s;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    border-radius: 0 10px 10px 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* toggleClass特效 */
+
+.show1 {
+    left: 0%;
+}
+
+.show1-1 {
+    left: 10.1%;
+}
+
+/* 圖庫 */
+
+.divGallery {
+    overflow: auto;
+    transition: all 0.5s;
+    z-index: 6;
+    background-color: rgba(207, 218, 67, 0.9);
+    background-image: url("../img/bag.png");
+    width: 23%;
+    height: 100%;
+    right: -23.2%;
+    position: fixed;
+    top: 0%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    border-left: 5px solid rgba(255, 255, 255, 0.5);
+    /* border-radius:  15px 0 0 15px; */
+}
+
+.showorhide2 {
+    /* display: inline-block; */
+    position: absolute;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    top: 1%;
+    left: 96.0%;
+    background: rgb(231, 230, 145);
+    background-image: url("../img/book.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 1%;
+    font-family: 'Trebuchet MS';
+    border-radius: 10px 0 0 10px;
+    border: 3px solid rgba(243, 236, 236, 0.5);
+    box-sizing: border-box;
+    border-right: 0;
+    box-shadow: -1px 5px 15px rgba(0, 0, 0, 0.8);
+    color: rgb(22, 16, 4);
+}
+
+/* toggleClass特效 */
+
+.show2 {
+    right: 0%;
+}
+
+.show2-1 {
+    left: 72.8%;
+}
+
+img {
+    position: relative;
+    left: 26%;
+    margin-bottom: 20px;
+}
+
+/* 獲取獎勵區 */
+
+#divGetPic {
+    transition: height 4s,opacity 0.5s;
+    opacity: 0;
+    z-index: 0;
+    /* background-color: violet; */
+    width: 40%;
+    height: 97%;
+    margin-left: 30%;
+    /* background-image: url("../img/giftBG.jpg"); */
+    background-image: linear-gradient(rgba(0, 0, 0,0.8 ), rgba(0, 0, 0, 0.8)), url('../img/last.PNG');
+    /* background-image: url("./img/div2暗背景.png"); */
+    position: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 5px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    border: 4px solid black;
+}
+
+#box {
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    width: 40%;
+}
+#btnKey{
+    position: absolute;
+    top: 77%;
+    left: 26%;
+    background-image: url("../img/key.png");
+    background-color: rgba(0, 0, 0, 0);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0.1px solid rgba(0, 0, 0, 0);
+    width: 15%;
+    height: 5%;
+    border-radius: 10px;
+}
+#btnKey:active{
+    position: absolute;
+    
+    left: 28%;
+}
+#imgGift{
+    transition: all 2s;
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 80%;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.8);
+    
+}
+#imgGift2{
+    transition: all 2s;
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 80%;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.8);
+    
+}
+.Gallery{
+    transition: all 0.5s;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.light{
+    position: absolute;
+    opacity: 0.8;
+    /* top: 80%;
+    left: 80%; */
+    width: 10%;
+}
