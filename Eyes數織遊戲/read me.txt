@@ -1,5 +1,17 @@
 執行請安裝xampp
 並開啟Apache與MySQL伺服器
+創建資料庫
+CREATE DATABASE user;
+USE user;
+CREATE TABLE `user` (
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `username` VARCHAR(255),
+  `password` VARCHAR(255),
+  `name` VARCHAR(255),
+  `email` VARCHAR(255),
+  `phone` VARCHAR(255),
+  `game_progress` INT DEFAULT 0
+);
 再將Eyes數織遊戲資料夾放進xampp路徑下的htdocs資料夾裡
 瀏覽器輸入http://localhost/Eyes數織遊戲/login.html
-即可開啟網頁
+即可開啟網頁並註冊後登入即可遊玩
